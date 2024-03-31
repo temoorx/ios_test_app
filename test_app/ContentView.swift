@@ -19,7 +19,7 @@ struct ContentView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 180 , height: 180)
-                    Text("76°").font(.system(size: 70, weight: .medium))
+                    Text("76°").font(.system(size: 80, weight: .medium))
                         .foregroundColor(.white)
                 }
                 Spacer()
