@@ -34,14 +34,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0456A9B72BB9879100DAA667 /* test_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0456A9B72BB9879100DAA667 /* SwiftUI-Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0456A9BA2BB9879100DAA667 /* test_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_appApp.swift; sourceTree = "<group>"; };
 		0456A9BC2BB9879100DAA667 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0456A9BE2BB9879200DAA667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0456A9C12BB9879200DAA667 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0456A9C72BB9879300DAA667 /* test_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0456A9C72BB9879300DAA667 /* SwiftUI-WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-WeatherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0456A9CB2BB9879300DAA667 /* test_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_appTests.swift; sourceTree = "<group>"; };
-		0456A9D12BB9879300DAA667 /* test_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0456A9D12BB9879300DAA667 /* SwiftUI-WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0456A9D52BB9879300DAA667 /* test_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_appUITests.swift; sourceTree = "<group>"; };
 		0456A9D72BB9879300DAA667 /* test_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,9 +84,9 @@
 		0456A9B82BB9879100DAA667 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0456A9B72BB9879100DAA667 /* test_app.app */,
-				0456A9C72BB9879300DAA667 /* test_appTests.xctest */,
-				0456A9D12BB9879300DAA667 /* test_appUITests.xctest */,
+				0456A9B72BB9879100DAA667 /* SwiftUI-Weather.app */,
+				0456A9C72BB9879300DAA667 /* SwiftUI-WeatherTests.xctest */,
+				0456A9D12BB9879300DAA667 /* SwiftUI-WeatherUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0456A9B62BB9879100DAA667 /* test_app */ = {
+		0456A9B62BB9879100DAA667 /* SwiftUI-Weather */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0456A9DB2BB9879300DAA667 /* Build configuration list for PBXNativeTarget "test_app" */;
+			buildConfigurationList = 0456A9DB2BB9879300DAA667 /* Build configuration list for PBXNativeTarget "SwiftUI-Weather" */;
 			buildPhases = (
 				0456A9B32BB9879100DAA667 /* Sources */,
 				0456A9B42BB9879100DAA667 /* Frameworks */,
@@ -142,14 +142,14 @@
 			);
 			dependencies = (
 			);
-			name = test_app;
+			name = "SwiftUI-Weather";
 			productName = test_app;
-			productReference = 0456A9B72BB9879100DAA667 /* test_app.app */;
+			productReference = 0456A9B72BB9879100DAA667 /* SwiftUI-Weather.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0456A9C62BB9879300DAA667 /* test_appTests */ = {
+		0456A9C62BB9879300DAA667 /* SwiftUI-WeatherTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0456A9DE2BB9879300DAA667 /* Build configuration list for PBXNativeTarget "test_appTests" */;
+			buildConfigurationList = 0456A9DE2BB9879300DAA667 /* Build configuration list for PBXNativeTarget "SwiftUI-WeatherTests" */;
 			buildPhases = (
 				0456A9C32BB9879300DAA667 /* Sources */,
 				0456A9C42BB9879300DAA667 /* Frameworks */,
@@ -160,14 +160,14 @@
 			dependencies = (
 				0456A9C92BB9879300DAA667 /* PBXTargetDependency */,
 			);
-			name = test_appTests;
+			name = "SwiftUI-WeatherTests";
 			productName = test_appTests;
-			productReference = 0456A9C72BB9879300DAA667 /* test_appTests.xctest */;
+			productReference = 0456A9C72BB9879300DAA667 /* SwiftUI-WeatherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0456A9D02BB9879300DAA667 /* test_appUITests */ = {
+		0456A9D02BB9879300DAA667 /* SwiftUI-WeatherUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0456A9E12BB9879300DAA667 /* Build configuration list for PBXNativeTarget "test_appUITests" */;
+			buildConfigurationList = 0456A9E12BB9879300DAA667 /* Build configuration list for PBXNativeTarget "SwiftUI-WeatherUITests" */;
 			buildPhases = (
 				0456A9CD2BB9879300DAA667 /* Sources */,
 				0456A9CE2BB9879300DAA667 /* Frameworks */,
@@ -178,9 +178,9 @@
 			dependencies = (
 				0456A9D32BB9879300DAA667 /* PBXTargetDependency */,
 			);
-			name = test_appUITests;
+			name = "SwiftUI-WeatherUITests";
 			productName = test_appUITests;
-			productReference = 0456A9D12BB9879300DAA667 /* test_appUITests.xctest */;
+			productReference = 0456A9D12BB9879300DAA667 /* SwiftUI-WeatherUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +206,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0456A9B22BB9879100DAA667 /* Build configuration list for PBXProject "test_app" */;
+			buildConfigurationList = 0456A9B22BB9879100DAA667 /* Build configuration list for PBXProject "SwiftUI-Weather" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +219,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0456A9B62BB9879100DAA667 /* test_app */,
-				0456A9C62BB9879300DAA667 /* test_appTests */,
-				0456A9D02BB9879300DAA667 /* test_appUITests */,
+				0456A9B62BB9879100DAA667 /* SwiftUI-Weather */,
+				0456A9C62BB9879300DAA667 /* SwiftUI-WeatherTests */,
+				0456A9D02BB9879300DAA667 /* SwiftUI-WeatherUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -284,12 +284,12 @@
 /* Begin PBXTargetDependency section */
 		0456A9C92BB9879300DAA667 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0456A9B62BB9879100DAA667 /* test_app */;
+			target = 0456A9B62BB9879100DAA667 /* SwiftUI-Weather */;
 			targetProxy = 0456A9C82BB9879300DAA667 /* PBXContainerItemProxy */;
 		};
 		0456A9D32BB9879300DAA667 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0456A9B62BB9879100DAA667 /* test_app */;
+			target = 0456A9B62BB9879100DAA667 /* SwiftUI-Weather */;
 			targetProxy = 0456A9D22BB9879300DAA667 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -485,7 +485,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test_app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/test_app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI-Weather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUI-Weather";
 			};
 			name = Debug;
 		};
@@ -504,7 +504,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test_app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/test_app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI-Weather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUI-Weather";
 			};
 			name = Release;
 		};
@@ -545,7 +545,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0456A9B22BB9879100DAA667 /* Build configuration list for PBXProject "test_app" */ = {
+		0456A9B22BB9879100DAA667 /* Build configuration list for PBXProject "SwiftUI-Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0456A9D92BB9879300DAA667 /* Debug */,
@@ -554,7 +554,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0456A9DB2BB9879300DAA667 /* Build configuration list for PBXNativeTarget "test_app" */ = {
+		0456A9DB2BB9879300DAA667 /* Build configuration list for PBXNativeTarget "SwiftUI-Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0456A9DC2BB9879300DAA667 /* Debug */,
@@ -563,7 +563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0456A9DE2BB9879300DAA667 /* Build configuration list for PBXNativeTarget "test_appTests" */ = {
+		0456A9DE2BB9879300DAA667 /* Build configuration list for PBXNativeTarget "SwiftUI-WeatherTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0456A9DF2BB9879300DAA667 /* Debug */,
@@ -572,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0456A9E12BB9879300DAA667 /* Build configuration list for PBXNativeTarget "test_appUITests" */ = {
+		0456A9E12BB9879300DAA667 /* Build configuration list for PBXNativeTarget "SwiftUI-WeatherUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0456A9E22BB9879300DAA667 /* Debug */,
