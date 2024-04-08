@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isNight = false
     var body: some View {
         ZStack {
-            BackgroundView(topColor: .blue, bottomColor: Color("lightBlue"))
+            BackgroundView(isNight: isNight)
             VStack{
                 Text("Cupertino, CA").font(.system(size: 32, weight: .medium, design: .default)).foregroundColor(.white).padding()
                 VStack(spacing:8){
-                    Image(systemName: "cloud.sun.fill")
+                    Image(systemName: 
+                            isNight ? "moon.stars.fill":
+                            "cloud.sun.fill")
                         .renderingMode(.original)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -44,10 +47,10 @@ struct ContentView: View {
                 Spacer()
                 
                 Button{
-                    print("tapped..")
+                    isNight.toggle()
                 }label: {
                     Text("Change Day Time").frame(width: 280, height: 50)
-                        .background(Color.white)
+                        .background(Color.white.gradient)
                         .font(.system(size: 20, weight: .bold, design: .default))
                         .cornerRadius(10)
                 }
@@ -71,8 +74,9 @@ struct WeatherDayView: View {
         VStack{
             Text(dayofWeek).font(.system(size: 16, weight: .medium, design: .default)).foregroundColor(.white)
             Image(systemName: imageName)
-                .renderingMode(.original)
+                .symbolRenderingMode(.multicolor)
                 .resizable()
+//                .foregroundStyle(.mint, .orange, .green)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40 , height: 40)
             Text("\(temperature)°").font(.system(size: 28, weight: .medium))
@@ -82,9 +86,8 @@ struct WeatherDayView: View {
 }
 
 struct BackgroundView: View {
-    var topColor: Color
-    var bottomColor: Color
+   var isNight: Bool
     var body: some View {
-        LinearGradient(colors: [topColor, bottomColor], startPoint: .topLeading, endPoint: .bottomTrailing).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        LinearGradient(colors: [isNight ? .black : .blue, isNight ? .gray :  Color("lightBlue")], startPoint: .topLeading, endPoint: .bottomTrailing).ignoresSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
 }
